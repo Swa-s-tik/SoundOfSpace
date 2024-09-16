@@ -81,12 +81,12 @@ def main():
             with st.container():
                 col1, col2 = st.columns([2, 3])
                 with col1:
-                    image_path = os.path(f"space_object_{i}.jpg")
+                    image_path = f"space_object_{i}.jpg"
                     if os.path.exists(image_path):
                         st.image(image_path)
                     
                 with col2:
-                    audio_path = os.path(f"space_object_{i}.wav")
+                    audio_path = f"space_object_{i}.wav"
                     if os.path.exists(audio_path):
                         st.audio(audio_path, format="audio/wav", start_time=0)
 
